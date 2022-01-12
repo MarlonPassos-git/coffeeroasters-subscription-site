@@ -32,7 +32,7 @@ export function H2({ children }: childrenProps) {
             <_H2>
                 { children }
             </_H2>
-        )
+        )   
 }
 
 export function H3({ children }: childrenProps) { 
