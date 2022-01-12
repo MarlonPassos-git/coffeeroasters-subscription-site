@@ -33,11 +33,19 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Barlow', sans-serif;
         font-size: var(--font-small);
         background-color: var(--light-gream);
+
+        display: flex;
+        justify-content: center;
+
     }
 
     #__next {
-        max-width: ;
+        width: 100%;
+        max-width: ${Rem(1440)};
         background-color: red;
+        padding: 0 var(--spacing-container-padding);
+        min-height: 100vh;
+
     }
 
     h1, h2, h3, h4, h5, h6 { 
