@@ -1,8 +1,15 @@
 import type { NextPage } from 'next'
+import { SectionGreatCoffe } from './components/SectionGreatCoffe'
+import { SectionOurCollection } from './components/SectionOurCollection'
+import { SectionWhyChooseUs } from './components/SectionWhyChooseUs'
 
 const Home: NextPage = () => {
   return (
-    <h1>ola mundo</h1>
+    <>
+      <SectionGreatCoffe />
+      <SectionOurCollection />
+      <SectionWhyChooseUs />
+    </>
   )
 }
 
