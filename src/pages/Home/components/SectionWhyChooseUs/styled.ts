@@ -2,6 +2,7 @@ import { progressiveClamp, Rem } from 'progressive-size/dist';
 import styled from 'styled-components';
 import { Section } from '../../../../components/Section/section_styles';
 import { H2, Paragraph as _Paragraph } from '../../../../components/Texts/styles';
+import { breakpoints } from '../../../../styles/variables';
 
 export const Container = styled(Section)`
   display: flex;
@@ -10,6 +11,19 @@ export const Container = styled(Section)`
   height: ${progressiveClamp(902, 577)};
   padding-top: ${progressiveClamp(64, 100)};
   align-items: center;
+  margin-bottom: ${Rem(717)};
+
+  @media (min-width: ${breakpoints.mobile}) {
+    margin-bottom: ${Rem(434)};
+    
+  }
+
+  @media (min-width: ${breakpoints.tablet}) {
+    margin-bottom: ${Rem(351)};
+    
+  }
+  
+
 
 `
 
