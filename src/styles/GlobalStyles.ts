@@ -3,8 +3,6 @@ import { progressiveClamp, Rem } from 'progressive-size'
 
 export const GlobalStyle = createGlobalStyle`
 
-    
-
     :root {
         // Fonts
         --font-extra-large: ${progressiveClamp(40, 150)}; 
@@ -14,18 +12,20 @@ export const GlobalStyle = createGlobalStyle`
         --font-extra-small: ${Rem(24)};
         --font-text-standard: ${progressiveClamp(15, 16)};
         --font-navigation: ${Rem(12)};
-   
+        
+        // Colors
 
         --dark-cyan: #0E8784;
+        --light-cyan: #66D2CF;
         --dark-grey-blue: #333D4B;
         --pale-orange: #FDD6BA;
         --light-gream: #FEFCF7;
         --grey: #83888F;
+        --very-dark-grayish-blue: #2C343E;
 
         // Spacing
 
         --spacing-container-padding: ${progressiveClamp(24, 80)};
-
     }
 
     body {
@@ -55,7 +55,4 @@ export const GlobalStyle = createGlobalStyle`
         cursor: pointer;
         
     }
-
-    
-
 `
