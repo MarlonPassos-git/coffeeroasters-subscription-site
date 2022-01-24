@@ -1,7 +1,20 @@
-export  function Header() {
+
+import { Container, Logo } from "./header-styles";
+import dynamic from 'next/dynamic'
+
+export function Header() {
+    const NavigationMain = dynamic(
+        () => import('../NavigationMain/index'),
+        { ssr: false }
+    )
+
     return (
-        <div>
-            header
-        </div>
+        <Container>
+            <Logo
+                src='./images/logo.svg'
+            />
+            <NavigationMain />
+
+        </Container>
     )
 }
