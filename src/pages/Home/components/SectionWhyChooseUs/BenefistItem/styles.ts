@@ -56,7 +56,7 @@ export const Img = styled.img`
 
 export const Title = styled(H3)`
   grid-area: title;
-  
+  color: var(--light-gream);
   margin: 
     ${Rem(56)} 
     0 
@@ -81,3 +81,4 @@ export const Paragraph = styled(_Paragraph)`
     max-width: none;
   }
 `
+
