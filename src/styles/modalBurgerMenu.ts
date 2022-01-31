@@ -2,8 +2,8 @@ export const modalBurgerMenuStyles = {
   overlay: {
       position: 'fixed',
       inset: 0,
-      
-      backgroundColor: 'rgba(255, 255, 255, 0.75)'
+      background: 'transparent',
+    
   },
   content: {
     position: 'absolute',
@@ -16,8 +16,13 @@ export const modalBurgerMenuStyles = {
       WebkitOverflowScrolling: 'touch',
       borderRadius: '4px',
       outline: 'none',
-      background: 'linear - gradient(180deg, rgba(254, 252, 247, 0.504981) 0 %, #FEFCF7 55.94 %)',
-      
-
+    background: 'linear-gradient(0deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%)', 
+      zIndex: '100',
   }
 }
+
+
+
+
+
+

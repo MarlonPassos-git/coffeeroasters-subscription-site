@@ -19,7 +19,7 @@ export const Container = styled.li`
       "img description"
   }
 
-  z-index: 1;
+  z-index: 0;
 
 `
 
