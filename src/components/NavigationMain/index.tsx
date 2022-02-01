@@ -6,6 +6,7 @@ import Modal from 'react-modal';
 import { modalBurgerMenuStyles } from "../../styles/modalBurgerMenu";
 import { NavigatorItens } from "../NavigatorItens";
 import { breakpoints } from "../../styles/variables";
+import { lockBodyScroll } from "../../utils/lockBodyScroll";
 
 
 export default function NavigatorMain() {
@@ -18,6 +19,10 @@ export default function NavigatorMain() {
             setScreenWidth(window.innerWidth)
         })
     }, [])
+
+    useEffect(() => {
+        lockBodyScroll(isOpen)
+    }, [isOpen])
 
     const MenuHamburger = (
         <>
