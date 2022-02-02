@@ -4,6 +4,7 @@ import { AboutUs } from './components/AboutUs'
 const Home: NextPage = () => {
   return (
     <AboutUs />
+
   )
 }
 

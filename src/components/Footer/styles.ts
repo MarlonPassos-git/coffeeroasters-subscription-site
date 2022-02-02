@@ -50,5 +50,5 @@ export const Container = styled.footer`
 export const Logo = styled.img`
   width: ${Rem(235)};
   height: ${Rem(25)};
-
+  cursor: pointer;  
 `

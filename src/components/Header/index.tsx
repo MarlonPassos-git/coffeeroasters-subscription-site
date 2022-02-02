@@ -1,6 +1,7 @@
 
 import { Container, Logo } from "./header-styles";
 import dynamic from 'next/dynamic'
+import Link from "next/link";
 
 export function Header() {
     const NavigationMain = dynamic(
@@ -10,9 +11,13 @@ export function Header() {
 
     return (
         <Container>
-            <Logo
-                src='./images/logo.svg'
-            />
+            <Link href="/Home" passHref>
+                <Logo
+                    src='./images/logo.svg'
+                />
+            </Link>
+
+
             <NavigationMain />
 
         </Container>

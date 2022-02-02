@@ -15,5 +15,6 @@ export const Container = styled.header`
 export const Logo = styled.img`
     height: ${progressiveClamp(17, 25)};
     width: ${progressiveClamp(162, 235)};
+    cursor: pointer;
 
 `
