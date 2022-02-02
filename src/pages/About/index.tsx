@@ -1,8 +1,9 @@
 import type { NextPage } from 'next'
+import { AboutUs } from './components/AboutUs'
 
 const Home: NextPage = () => {
   return (
-    <h1>About</h1>
+    <AboutUs />
   )
 }
 
