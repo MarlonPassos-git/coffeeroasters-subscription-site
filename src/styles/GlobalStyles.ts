@@ -13,6 +13,8 @@ export const GlobalStyle = createGlobalStyle`
         --font-text-standard: ${progressiveClamp(15, 16)};
         --font-navigation: ${Rem(12)};
         
+
+        
         // Colors
 
         --dark-cyan: #0E8784;
