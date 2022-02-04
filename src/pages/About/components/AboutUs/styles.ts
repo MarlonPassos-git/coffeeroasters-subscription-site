@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Section } from "../../../../components/Section/section_styles";
 import { H1, Paragraph as _Paragraph } from "../../../../components/Texts/styles";
 import { breakpoints } from "../../../../styles/variables";
-import { reponsiveBackground } from "../../../../utils/responsiveBackground";
+import { responsiveBackground } from "../../../../utils/responsiveBackground";
 
 export const Container = styled(Section)`
   display: flex;
@@ -13,7 +13,7 @@ export const Container = styled(Section)`
   height: ${progressiveClamp(400, 450, breakpoints._tablet)};
 
 
-  ${reponsiveBackground({
+  ${responsiveBackground({
     mobile: "./images/about/mobile/image-hero-whitecup.jpg",
     desktop: "./images/about/desktop/image-hero-whitecup.jpg",
     tablet: "./images/about/tablet/image-hero-whitecup.jpg",

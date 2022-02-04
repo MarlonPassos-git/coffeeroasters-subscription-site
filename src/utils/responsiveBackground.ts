@@ -1,12 +1,12 @@
 import { breakpoints } from "../styles/variables"
 
-interface IReponsiveBackground { 
+interface IresponsiveBackground { 
   mobile?: string;
   tablet?: string;
   desktop?: string;
 }
 
-export function reponsiveBackground({mobile, tablet, desktop}: IReponsiveBackground): string  { 
+export function responsiveBackground({mobile, tablet, desktop}: IresponsiveBackground): string  { 
 
   let finalCSS = ''
 

@@ -1,5 +1,5 @@
 import { Button } from "../../../../components/Button";
-import { reponsiveBackground } from "../../../../utils/responsiveBackground";
+import { responsiveBackground } from "../../../../utils/responsiveBackground";
 import { Container, Text, Title } from "./sectionGeatCoffe_styles";
 
 export function SectionGreatCoffe() {
